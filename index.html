@@ -124,12 +124,16 @@
         padding: 5rem;
         width: 33%;
         border-radius: 2.8rem;
+        
+
 
     }
 
-    .container h1 {
+    .container .H1{
         text-align: center;
         font-family: 'Baloo Bhai 2', cursive;
+        font-size: 3.4rem;
+        
     }
 
     .form.group input {
@@ -378,21 +382,73 @@ section {
 
         @media (max-width: 880px) {
 
-            .header .left,
-            .header .mid,
-            .header .right {
-                display: block;
-                width: 100%;
-                margin-bottom: 4rem;
-                text-align: center;
+            body{
+        background: url("img/bgv.jpg");
+        background-repeat: no-repeat;
+       /* background-position: center;*/
+  background-size:contain;
             }
+
+            .header .left{
+                display: grid;
+            }
+
+            .header .mid .navbar
+            {
+                float: right;
+    display: flow-root;
+    text-align: justify;
+                display: inline-block;
+
+            }
+            .header .right {
+                display: flow-root;
+                width: 100%;
+                margin-top: 10rem;
+
+                text-align: center;
+                
+            }
+
+            .container{
+                width:20rem;
+            }
+
+
+            html{
+        font-size: 55%;
+    }
+
+    .header{
+        font-size: 32%;
+    }
+    .mid{
+        font-size: 11%;
+    }
+    .btn{
+        font-size: auto;
+    }
+    .form.group input{
+        width:22rem;
+    }
+    .container button{
+        width:22rem;
+    }
         }
 
-        
+        /*
 @media(max-width:998px){
     html{
         font-size: 55%;
     }
+    body{
+        background: url("img/bgv.jpg");
+        background-repeat: no-repeat;
+        background-position:center;
+  background-size:contain;
+        
+
+            }
     .header{
         font-size: 32%;
     }
@@ -436,7 +492,7 @@ section {
     }
     
 }
-
+*/
 
 
 }
@@ -467,7 +523,7 @@ section {
     </header>
 
     <div class="container">
-        <h1>Join the best Gym of Ahemedabad Now !</h1>
+        <div class="H1">Join the best Gym of Ahemedabad Now !</div>
         <form action="noaction.php">
             <div class="form group">
                 <input type="text" name="" placeholder="Enter your Name ">
