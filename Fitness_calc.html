@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Fira+Code:wght@500;600&display=swap"
+    rel="stylesheet">
+	<!-- Include JS files -->
+	<script src="js/app.js"></script>
+    <style>
+
+.body{
+    
+    background-image: url('https://images.unsplash.com/photo-1608138127700-e3c9405832d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80');
+}
+
+.container{
+    margin:67px 45px;
+    font-family: 'Baloo Bhai 2', cursive;
+        padding: 3px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 14px;
+}
+.h1,p,pre{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 18px;
+}
+
+#result{
+    margin:20px 30px;
+    padding:5px 10px;
+}
+
+.button{font-family: 'Baloo Bhai 2', cursive;
+    font-size: 20px;
+
+}
+
+.height{margin: 5px 0px;
+        background-color: black;
+        color: white;
+        font-family: 'Baloo Bhai 2', cursive;
+        padding: 3px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 14px;
+        cursor: pointer;
+
+
+}
+
+.weight{margin: 5px 0px;
+        background-color: black;
+        color: white;
+        font-family: 'Baloo Bhai 2', cursive;
+        padding: 3px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 14px;
+        cursor: pointer;
+
+
+}
+
+.calculate{margin: 5px 0px;
+        background-color: black;
+        color: white;
+        font-family: 'Baloo Bhai 2', cursive;
+        padding: 3px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 14px;
+        cursor: pointer;
+
+
+}
+
+
+         /*new one*/
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+/*
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}*/
+
+.footer-distributed{
+	background: #666;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+    font-family: Open Sans;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+  font-family: 'Baloo Bhai 2', cursive; 
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-links a:hover,
+    .footer-distributed .footer-links a.active {
+        text-decoration: underline;
+        color: lightblue;
+    }
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+   
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+    font-family: 'Baloo Bhai 2', cursive; 
+    
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+    font-family: 'Baloo Bhai 2', cursive; 
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+    font-family: 'Baloo Bhai 2', cursive; 
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-family: 'Baloo Bhai 2', cursive; 
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+    font-family: 'Baloo Bhai 2', cursive; 
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+    font-family: 'Baloo Bhai 2', cursive; 
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+    font-family: 'Baloo Bhai', cursive;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+  .body{
+    font: bold 14px sans-serif;
+  }
+
+
+}
+
+
+
+    </style>
+</head>
+
+<body style="background-image: url('https://img.freepik.com/free-vector/simple-gradient-background-vector-winter-blue-pink_53876-105768.jpg?w=2000'); background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;">
+<hr>
+	<div class="container" >
+        
+		<h1>BMI Calculator</h1>
+
+		<!-- Option for providing height
+			and weight to the user-->
+		<p>Height (in cm)</p>
+
+		<input type="text" id="height">
+
+		<p>Weight (in kg)</p>
+
+		<input type="text" id="weight">
+
+		<button id="btn">Calculate</button>
+
+		<div id="result"></div>
+	</div>
+    <hr>
+    <p>
+        The Body Mass Index (BMI) Calculator can be used to calculate BMI values based on their height and weight. BMI is a fairly reliable indicator of body fatness for most people.
+<pre>
+Formula:
+
+BMI = (weight) / (height * height)  </pre>
+<p>
+Approach: BMI is a number calculated from an individual’s weight and height. To find out BMI we will take input from the user (both height and weight) which will be stored in height and weight variable for further calculation. The calculation process is simple, we will simply divide weight in kilograms by the square of the height. Now as per the BMI calculated, it will execute the respective if-else statement. We are also checking if the user is pressing submit button without entering the inputs, in that case, we are printing provide height or provide weight.
+Using HTML we are giving desired structure, option for the input, and submit button. With the help of CSS, we are beautifying our structure by giving colors and desired font, etc.
+
+In the JavaScript section, we are processing the taken input and after calculating, the respective output is printed.</p>
+ <hr>   </p>
+
+ 
+ <footer class="footer-distributed">
+    <div class="footer-left">
+
+        <h3>Look in the mirror.<span>That’s your competition.</span></h3>
+
+        <p class="footer-links">
+            <a href="#" class="link-1">Home</a>
+            
+            <a href="Blog.html">Blog</a>
+        
+            <a href="#">Pricing</a>
+        
+            <a href="#">About</a>
+            
+            <a href="#">Faq</a>
+            
+            <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">Fitness For You © 2022</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>23 Inc. Ranip Terminal</span> Ahemedabad , Gujarat</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 98945878XX</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">Fitnessforyou7@gmail.com</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about">
+            <span>About the company</span>
+            Fitness For You is “Working Towards A Healthier India” by providing good quality service, world-class equipment, and facilities, 24/7 at a reasonable price with a focus on the profitability of our Franchisees. The faith that our brand carries is through years of care & service to our members.
+        </p>
+        <!--
+        <div class="footer-icons">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+          -->
+    </div>
+
+</footer>    
+
+</body>
+
+</html>
