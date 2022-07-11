@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regular Fitmenss</title>
+    
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Fira+Code:wght@500;600&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+
+<style>
+    html{
+        font-size: 10px;
+    }
+    /* css reset*/
+    body {
+        color: white;
+        font-family: 'Baloo Bhai 2', cursive;
+        font-family: 'Fira Code', monospace;
+        margin: .0rem;
+        padding: .0rem;
+        background: url("img/bg1.jpg");
+        background-repeat: no-repeat;
+        background-size: auto;
+
+    }
+    
+
+
+    .left {
+        display: inline-block;
+        border: .2rem solid lightgoldenrodyellow;
+        /*  */
+        position: absolute;
+        left: 3.7rem;
+        top: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .left img {
+        width: 12.2rem;
+        height: 6rem;
+
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .mid {
+        display: block;
+        width: 55%;
+        
+        margin: 2.7rem auto;
+       /* border: 2px solid green;*/
+    }
+
+    .right {
+        position: absolute;
+        right: 3.4rem;
+        top: 1.8rem;
+        display: inline-block;
+        /*border: 2px solid yellow;*/
+    }
+
+    .btn {
+        margin: .5rem .0rem;
+        background-color: black;
+        color: white;
+        font-family: 'Baloo Bhai 2', cursive;
+        padding: .3rem 1.4rem;
+        border: .2rem solid grey;
+        border-radius: 1rem;
+        font-size: 1.4rem;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(118, 116, 116);
+    } 
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+
+        display: inline-block;
+
+        font-size: 2rem;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 3.3rem 1.5rem;
+        position: relative;
+        margin: 4rem 1.1px 5rem 2rem;
+        font-family: 'Baloo Bhai 2', cursive; 
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+
+    .container {
+        border: .2rem solid white;
+        margin: 16rem 6.7rem;
+        padding: 5rem;
+        width: 33%;
+        border-radius: 2.8rem;
+
+    }
+    .container h1{
+        text-align: center;
+        font-family: 'Baloo Bhai 2', cursive; 
+    }
+    .form.group input{
+        font-family: 'Baloo Bhai 2', cursive;
+        text-align: center;
+        display: block;
+        width:37rem;
+        padding:.5rem;
+        border:.2rem solid black;
+        margin: 1.9rem auto;
+        font-size: 2.1rem;
+        border-radius: .8rem;
+
+    }
+
+    .form.container.h1{
+        text-align: center;
+    }
+    .container button{
+        display:block;
+        width:95%;
+        margin:2.5rem auto;
+        font-size: 2rem;
+
+    }
+
+    /*new one*/
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+/*
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}*/
+
+.footer-distributed{
+	background: #666;
+	box-shadow: .0rem .1rem .1rem .0rem rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 1.6rem sans-serif;
+	padding: 5.5rem 5.0rem;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 3.6rem 'Open Sans', cursive;
+	margin: .0rem;
+    font-family: Open Sans;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 2rem 0 1.2rem;
+	padding: .0rem;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+  font-family: 'Baloo Bhai 2', cursive; 
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-links a:hover,
+    .footer-distributed .footer-links a.active {
+        text-decoration: underline;
+        color: lightblue;
+    }
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 1.4rem;
+	font-weight: normal;
+	margin: .0rem;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 2.5rem;
+   
+	width: 3.8rem;
+	height: 3.8rem;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 4.2rem;
+	margin: 1rem 1.5rem;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 1.7rem;
+	line-height: 3.8rem;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:.0rem;
+    font-family: 'Baloo Bhai 2', cursive; 
+    
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+    font-family: 'Baloo Bhai 2', cursive; 
+	font: size 1.4rem;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;
+    font-family: 'Baloo Bhai 2', cursive; 
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-family: 'Baloo Bhai 2', cursive; 
+  font-weight:300;
+  font-size: 2rem;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: .5rem;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+    font-family: 'Baloo Bhai 2', cursive; 
+	line-height: 2rem;
+	color:  #92999f;
+	font-size: 1.3rem;
+	font-weight: normal;
+	margin: .0rem;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+    font-family: 'Baloo Bhai 2', cursive; 
+	color:  #ffffff;
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 2.5rem;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 3.5rem;
+	height: 3.5rem;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: .2rem;
+    font-family: 'Baloo Bhai', cursive;
+	font-size: 2rem;
+	color: #ffffff;
+	text-align: center;
+	line-height: 3.5rem;
+
+	margin-right: .3rem;
+	margin-bottom: .5rem;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 1.4rem sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 4rem;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: .0rem;
+	}
+
+  .body{
+    font: bold 1.4rem sans-serif;
+  }
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+    
+}
+
+@media(max-eidth:768px){
+    html{
+        font-size: 45%;
+    }
+}
+
+
+
+}
+
+
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/icon.jpg" alt="logo of dumbells">
+            <div>Fitness For You</div>
+        </div>
+        <div class="mid">
+            <!--mid box for navabar-->
+            <div class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="Aboutus.html">About us</a></li>
+                <li><a href="Fitness_calc.html">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </div>
+        </div>
+
+        <div class="right">
+            <!--right box for buttons-->
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <h1>Join the best Gym of Ahemedabad Now !</h1>
+        <form action="noaction.php">
+            <div class="form group">
+                <input type="text" name="" placeholder="Enter your Name ">
+            </div>
+            <div class="form group">
+                <input type="text" name="" placeholder="Enter your Age ">
+            </div>
+            <div class="form group">
+                <input type="text" name="" placeholder="Enter your Gender ">
+            </div>
+            <div class="form group">
+                <input type="text" name="" placeholder="Enter your Locality ">
+            </div>
+            <button class="btn">Submit</button>
+
+        </form>
+    </div>
+
+    <footer class="footer-distributed">
+        <div class="footer-left">
+
+            <h3>Look in the mirror.<span>That’s your competition.</span></h3>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+                
+                <a href="Blog.html">Blog</a>
+            
+                <a href="#">Pricing</a>
+            
+                <a href="#">About</a>
+                
+                <a href="#">Faq</a>
+                
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Fitness For You © 2022</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>23 Inc. Ranip Terminal</span> Ahemedabad , Gujarat</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 98945878XX</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">Fitnessforyou7@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Fitness For You is “Working Towards A Healthier India” by providing good quality service, world-class equipment, and facilities, 24/7 at a reasonable price with a focus on the profitability of our Franchisees. The faith that our brand carries is through years of care & service to our members.
+            </p>
+            <!--
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+              -->
+        </div>
+
+    </footer>    
+
+
+
+
+
+</body>
+
+</html>
