@@ -8,6 +8,10 @@
     <title>Regular Fitmenss</title>
 
 </head>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Fira+Code:wght@500;600&display=swap"
@@ -32,8 +36,9 @@
 
 
     }
-
-
+       .container2{
+        display: none;
+       }
 
     .left {
         display: inline-block;
@@ -387,11 +392,49 @@ section {
 
         @media (max-width: 880px) {
 
-            body{
-        background: url("img/bgv.jpg");
-        background-repeat: repeat-y;
-       /* background-position: center;*/
-  background-size:contain;
+            .container2{
+
+               
+                display: inline-flex;
+            }
+
+            .container2{
+                
+            }
+             
+            .mid {
+                display: none;
+
+            }
+            
+
+       
+        /* border: 2px solid green;*/
+    }
+            .header{
+                display: none;
+            }
+
+            body{/*
+        background: url("https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Z3ltfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=600&q=60");
+        
+        background-size: contain;
+        background-position: center;
+*/
+/*background: url(img/rt.png) no-repeat center center fixed; 
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  */
+  background: url(img/rt.png) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+
+       
+        
+       
             }
 
             .header .left{
@@ -439,6 +482,8 @@ section {
     .container button{
         width:22rem;
     }
+
+    
         }
 
         /*
@@ -526,6 +571,30 @@ section {
         </div>
 
     </header>
+    <div class="mid2">
+    <div>
+        <style scoped>
+            @import "rnav.css";
+            
+        </style>
+         <div class="container2" >
+        
+            <input type="checkbox" id="active">
+            <label for="active" class="menu-btn"><span></span></label>
+            <label for="active" class="close"></label>
+            <div class="wrapper">
+              <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Feedback</a></li>
+        </ul>
+        </div>
+        
+      </div>
+    </div>
+
 
     <div class="container">
         <div class="H1">Join the best Gym of Ahemedabad Now !</div>
