@@ -24,6 +24,16 @@
         font-size: 10px;
     }
 
+
+    section {
+
+        background: url('https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGd5bXxlbnwwfDB8MHx8&auto=format&fit=crop&w=1400&q=900');
+        background-repeat: no-repeat;
+
+
+
+    }
+
     /* css reset*/
     body {
         color: white;
@@ -31,9 +41,30 @@
         font-family: 'Fira Code', monospace;
         margin: .0rem;
         padding: .0rem;
-        background: url("img/bg1.jpg");
+        /*background: url("img/bg1.jpg");*/
         background-repeat: no-repeat;
+        /*display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-size: cover;*/
+       /* background: url('https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGd5bXxlbnwwfDB8MHx8&auto=format&fit=crop&w=1450&q=120') ;*/
+        background-image: url('https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=850&dpr=1');
+        width: 100%;
+    height: auto;
 
+
+    }
+
+    .section {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-size: cover;
+        background: url('https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGd5bXxlbnwwfDB8MHx8&auto=format&fit=crop&w=1450&q=120');
 
     }
 
@@ -553,129 +584,167 @@ section {
     
 }
 */
-
-
-    }
 </style>
 
 <body>
-    <header class="header">
-        <div class="left">
-            <img src="img/icon.jpg" alt="logo of dumbells">
-            <div>Fitness For You</div>
-        </div>
-        <div class="mid">
-            <!--mid box for navabar-->
-            <div class="navbar">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="Aboutus.html">About us</a></li>
-                <li><a href="Fitness_calc.html">Fitness Calculator</a></li>
-                <li><a href="#">Contact Us</a></li>
+    
+
+        <script>
+            function changeBg() {
+
+                const images = [
+                    'url("https://images.unsplash.com/photo-1485727749690-d091e8284ef3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=120")',
+                    'url("https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=120")',
+                    'url("https://images.unsplash.com/photo-1591311630200-ffa9120a540f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=120")',
+                    'url("https://images.unsplash.com/photo-1574680088814-c9e8a10d8a4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=120")',
+                    'url("https://images.unsplash.com/photo-1579758629938-03607ccdbaba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=120")',
+                    'url("https://images.unsplash.com/photo-1518609571773-39b7d303a87b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=120")',
+                    'url("https://images.unsplash.com/photo-1518609571773-39b7d303a87b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=120")',
+                    'url("https://images.unsplash.com/photo-1518310383802-640c2de311b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=120")',
+                    'url("https://images.unsplash.com/photo-1609576827249-4c756d27081d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=120")',
+                    'url("https://images.unsplash.com/photo-1534438097545-a2c22c57f2ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=120")',
+                    'url("https://images.unsplash.com/photo-1609576827249-4c756d27081d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=120")',
+                    'url("https://images.unsplash.com/photo-1606335544665-96055053b5c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=120")',
+                    'url("https://images.unsplash.com/photo-1571388208497-71bedc66e932?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=120")',
+                    'url("https://images.unsplash.com/photo-1637666067348-7303e7007363?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=120")',
+                    'url("https://images.unsplash.com/photo-1583500178450-e59e4309b57d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=120")',
+                    'url("https://images.unsplash.com/photo-1552848031-326ec03fe2ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=120")',
+                    'url("https://images.unsplash.com/photo-1552196563-55cd4e45efb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=120")',
+                    'url("https://images.unsplash.com/photo-1599447292325-2cffaa79bcbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=120")',
+                    'url("https://images.unsplash.com/photo-1483861911361-57d334ad765b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1450&q=120")',
+
+                ]
+                const body = document.querySelector('body');
+                const bg = images[Math.floor(Math.random() * images.length)];
+                body.style.backgroundImage = bg;
+            }
+
+            setInterval(changeBg, 8000)
+        </script>
+
+
+
+        <header class="header">
+            <div class="left">
+
+                <img src="img/icon.jpg" alt="logo of dumbells">
+
+
+                <div>Fitness For You</div>
             </div>
-        </div>
-
-        <div class="right">
-            <!--right box for buttons-->
-            <button class="btn">Call Us Now</button>
-            <button class="btn">Email Us</button>
-        </div>
-
-    </header>
-    <div class="mid2">
-        <div>
-            <style scoped>
-                @import "rnav.css";
-            </style>
-            <div class="container2">
-
-                <input type="checkbox" id="active">
-                <label for="active" class="menu-btn"><span></span></label>
-                <label for="active" class="close"></label>
-                <div class="wrapper">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Feedback</a></li>
-                    </ul>
+            <div class="mid">
+                <!--mid box for navabar-->
+                <div class="navbar">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="Aboutus.html">About us</a></li>
+                    <li><a href="Fitness_calc.html">Fitness Calculator</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </div>
-
-            </div>
-        </div>
-
-
-        <div class="container">
-            <div class="H1">Join the best Gym of Ahemedabad Now !</div>
-            <form action="noaction.php">
-                <div class="form group">
-                    <input type="text" name="" placeholder="Enter your Name ">
-                </div>
-                <div class="form group">
-                    <input type="text" name="" placeholder="Enter your Age ">
-                </div>
-                <div class="form group">
-                    <input type="text" name="" placeholder="Enter your Gender ">
-                </div>
-                <div class="form group">
-                    <input type="text" name="" placeholder="Enter your Locality ">
-                </div>
-                <button class="btn">Submit</button>
-
-            </form>
-        </div>
-
-        <footer class="footer-distributed">
-            <div class="footer-left">
-
-                <h3>Look in the mirror.<span>That’s your competition.</span></h3>
-
-                <p class="footer-links">
-                    <a href="#" class="link-1">Home</a>
-
-                    <a href="Blog.html">Blog</a>
-
-                    <a href="#">Pricing</a>
-
-                    <a href="#">About</a>
-
-                    <a href="#">Faq</a>
-
-                    <a href="#">Contact</a>
-                </p>
-
-                <p class="footer-company-name">Fitness For You © 2022</p>
             </div>
 
-            <div class="footer-center">
-
-                <div>
-                    <i class="fa fa-map-marker"></i>
-                    <p><span>23 Inc. Ranip Terminal</span> Ahemedabad , Gujarat</p>
-                </div>
-
-                <div>
-                    <i class="fa fa-phone"></i>
-                    <p>+91 98945878XX</p>
-                </div>
-
-                <div>
-                    <i class="fa fa-envelope"></i>
-                    <p><a href="mailto:support@company.com">Fitnessforyou7@gmail.com</a></p>
-                </div>
-
+            <div class="right">
+                <!--right box for buttons-->
+                <button class="btn">Call Us Now</button>
+                <button class="btn">Email Us</button>
             </div>
 
-            <div class="footer-right">
+        </header>
+        <div class="mid2">
+            <div>
+                <style scoped>
+                    @import "rnav.css";
+                </style>
+                <div class="container2">
 
-                <p class="footer-company-about">
-                    <span>About the company</span>
-                    Fitness For You is “Working Towards A Healthier India” by providing good quality service,
-                    world-class
-                    equipment, and facilities, 24/7 at a reasonable price with a focus on the profitability of our
-                    Franchisees. The faith that our brand carries is through years of care & service to our members.
-                </p>
-                <!--
+                    <input type="checkbox" id="active">
+                    <label for="active" class="menu-btn"><span></span></label>
+                    <label for="active" class="close"></label>
+                    <div class="wrapper">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="container">
+                <div class="H1">Join the best Gym of Ahemedabad Now !</div>
+                <form action="noaction.php">
+                    <div class="form group">
+                        <input type="text" name="" placeholder="Enter your Name ">
+                    </div>
+                    <div class="form group">
+                        <input type="text" name="" placeholder="Enter your Age ">
+                    </div>
+                    <div class="form group">
+                        <input type="text" name="" placeholder="Enter your Gender ">
+                    </div>
+                    <div class="form group">
+                        <input type="text" name="" placeholder="Enter your Locality ">
+                    </div>
+                    <button class="btn">Submit</button>
+
+                </form>
+            </div>
+
+            <footer class="footer-distributed">
+                <div class="footer-left">
+
+                    <h3>Look in the mirror.<span>That’s your competition.</span></h3>
+
+                    <p class="footer-links">
+                        <a href="#" class="link-1">Home</a>
+
+                        <a href="Blog.html">Blog</a>
+
+                        <a href="#">Pricing</a>
+
+                        <a href="#">About</a>
+
+                        <a href="#">Faq</a>
+
+                        <a href="#">Contact</a>
+                    </p>
+
+                    <p class="footer-company-name">Fitness For You © 2022</p>
+                </div>
+
+                <div class="footer-center">
+
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>23 Inc. Ranip Terminal</span> Ahemedabad , Gujarat</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+91 98945878XX</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@company.com">Fitnessforyou7@gmail.com</a></p>
+                    </div>
+
+                </div>
+
+                <div class="footer-right">
+
+                    <p class="footer-company-about">
+                        <span>About the company</span>
+                        Fitness For You is “Working Towards A Healthier India” by providing good quality service,
+                        world-class
+                        equipment, and facilities, 24/7 at a reasonable price with a focus on the profitability of our
+                        Franchisees. The faith that our brand carries is through years of care & service to our members.
+                    </p>
+                    <!--
             <div class="footer-icons">
 
                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -685,14 +754,14 @@ section {
 
             </div>
               -->
-            </div>
+                </div>
 
-        </footer>
-
-
+            </footer>
 
 
 
+
+    </section>
 </body>
 
 </html>
